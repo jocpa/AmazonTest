@@ -9,6 +9,8 @@ describe('Pruebas Amazon', () => {
     cy.get('#twotabsearchtextbox').type('alexa')
                                   .type(` {enter} `)
 
+    cy.get('.s-pagination-next').click()
+
   })
 
 })
