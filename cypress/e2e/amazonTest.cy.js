@@ -6,6 +6,9 @@ describe('Pruebas Amazon', () => {
 
     cy.visit(url)
 
+    cy.get('#twotabsearchtextbox').type('alexa')
+                                  .type(` {enter} `)
+
   })
 
 })
