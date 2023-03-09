@@ -13,7 +13,8 @@ describe('Pruebas Amazon', () => {
 
     cy.xpath(`/html/body/div[1]/div[2]/div[1]/div[1]/div/span[1]/div[1]/div[4]/div`).click()
 
-    cy.get('#add-to-cart-button').click()
+    cy.xpath(`//*[@id="add-to-cart-button"]`).should('be.visible')
+    cy.xpath(`//*[@id="add-to-cart-button"]`).click()
     cy.get('#sw-atc-details-single-container').should('be.visible')
 
   })
