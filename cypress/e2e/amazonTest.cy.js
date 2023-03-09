@@ -11,6 +11,8 @@ describe('Pruebas Amazon', () => {
 
     cy.get('.s-pagination-next').click()
 
+    cy.xpath(`/html/body/div[1]/div[2]/div[1]/div[1]/div/span[1]/div[1]/div[4]/div`).click()
+
   })
 
 })
